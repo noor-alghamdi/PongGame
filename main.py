@@ -80,7 +80,9 @@ pen.penup()
 pen.goto(0, 260)
 pen.write("Player A: 0     Player B: 0", align="center", font=("courier", 24, "normal"))
 
-
+# Score
+score_a = 0
+score_b = 0
 
 # Main game loop:
 while True:
