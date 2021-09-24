@@ -114,12 +114,14 @@ while True:
   if (ball.xcor() > 340 and ball.xcor() < 350) and (ball.ycor() < paddle_b.ycor() + 40 and ball.ycor() > paddle_b.ycor() -40):
     ball.setx(340)
     ball.movx *= -1
+    score_a += 1
     pen.clear()
     pen.write("Player A: {}    Player B: {}".format(score_a, score_b), align="center", font=("courier", 24, "normal"))
 
   if (ball.xcor() < -340 and ball.xcor() > -350) and (ball.ycor() < paddle_a.ycor() + 40 and ball.ycor() > paddle_a.ycor() -40):
     ball.setx(-340)
     ball.movx *= -1
+    score_b += 1
     pen.clear()
     pen.write("Player A: {}    Player B: {}".format(score_a, score_b), align="center", font=("courier", 24, "normal"))
     
