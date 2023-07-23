@@ -6,7 +6,7 @@ window.bgcolor("white")
 window.setup(width=800, height=600)
 window.tracer(0)
 
-# Paddle A
+# Paddle A ..
 paddle_a = turtle.Turtle()
 paddle_a.speed(0)
 paddle_a.shape("square")
